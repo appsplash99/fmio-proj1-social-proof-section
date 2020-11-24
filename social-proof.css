@@ -1,0 +1,305 @@
+/* ------------ */
+/* DEFAULT VIEW - DESKTOP = min-width:992px*/
+/* ------------ */
+
+body {
+  font-family: 'Spartan';
+  font-size: 1.1rem;
+  margin: 60px;
+  /* backgroung-image: top-image, bottom-image */
+  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  /* background-size: width height, width height; */
+  background-size: 700px 420px, auto 800px;
+  background-position: left top, right bottom;
+}
+
+/*  */
+#top-section {
+  /* background: lightgreen; */
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: auto;
+  grid-auto-columns:auto;
+}
+
+/* Individual section in top-section */
+.item {
+  /* background: yellow; */
+  width: 50%;
+  margin: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* tag-line section */
+#tag-line {
+  padding: 10px;
+}
+#tag-line h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 3.3rem;
+  padding-left: 0px;
+  padding-right: 50px;
+}
+#tag-line p {
+  color: hsl(303, 10%, 53%);
+}
+
+/* Contains all ratings*/
+#ratings-container {
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* margin-left: 50px; */
+}
+/* Individual rating line */
+.rating {
+  /* background: hsla(300, 24%, 96%, 0.523); */
+  background: #F7F2F8;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+/* Checked Star Icon */
+.checked {
+  color: orange;
+  padding-left: 5px;
+}
+/* p tag inside star-rating */
+.rating p {
+  padding-left: 30px;
+  font-weight: 600;
+  padding-right: 30px;
+}
+#rating1 {
+  margin-right: auto;
+}
+#rating2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+#rating3 {
+  margin-left: auto;
+}
+
+/* Container for testimonial cards */
+#testimonials-section {
+  display: flex;
+  /* background: pink; */
+  padding: 20px;
+  height: 50vh;
+} 
+/* Margin Alignment for individual ratings */
+#testimonial1 {
+  margin-bottom: auto;
+}
+#testimonial2 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#testimonial3 {
+  margin-top: auto;
+}
+
+
+/* Individual testimonial Cards */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  background: hsl(300, 43%, 22%);
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 40px;
+}
+.customer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customer img {
+  border-radius: 50px;
+  margin-right: 25px;
+  width: auto;
+  height: 60px;
+}
+/* Customer Name */
+.name {
+  font-weight: 600;
+}
+/* Customer Verification */
+.verification {
+  margin-top: -8px;
+  line-height: unset;
+  color: hsl(333, 80%, 67%);
+}
+
+
+/* MEDIA QUERIES */
+/* ------------------------------------------ */
+/* Mobile/Tablet View: width less than 992px */
+/* ------------------------------------------ */
+@media (max-width: 992px) {
+
+  body {
+    margin: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* background-size: width height, width height; */
+    background-size: 100% auto, 100% auto;
+    background-position: left top, right bottom;
+  }
+
+  #top-section {
+    /* background: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+    grid-auto-columns:auto;
+  }
+  
+  /* Individual section in top-section */
+  .item {
+    /* background: lightcoral; */
+    width: 100%;
+    margin: 0px;
+    /* padding-right: 0px; */
+  }
+  
+  /* tag-line section */
+  #tag-line {
+    padding: 0px;
+    text-align: center;
+  }
+  #tag-line h1 {
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #tag-line p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Contains all ratings*/
+  #ratings-container {
+    /* background: brown; */
+    align-items: center;
+  }
+  /* Individual rating line */
+  .rating {
+    /* background: lightblue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: smaller;
+  }
+  /* Checked Star Icon */
+  .checked {
+    color: orange;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* p tag inside star-rating */
+  .rating p {
+    padding-left: 30px;
+    font-weight: 600;
+    padding-right: 30px;
+    text-align: center;
+  }
+  #rating1 {
+    margin: 0px;
+  }
+  #rating2 {
+    margin: 0px;
+  }
+  #rating3 {
+    margin: 0px;
+  }
+
+  /* Container for testimonial cards */
+  #testimonials-section {
+    /* background: rgb(124, 122, 255); */
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: auto;
+  } 
+  /* Margin Alignment for individual ratings */
+  #testimonial1 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  #testimonial2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  #testimonial3 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  /* Individual testimonial Cards */
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials p {
+    margin-top: 0px;
+    line-height: 1.5em;
+    font-size: smaller;
+    text-align: left;
+  }
+  .customer {
+    line-height: 0.5rem;
+  }
+  .customer img {
+    border-radius: 50px;
+    margin-right: 20px;
+    width: auto;
+    height: 45px;
+  }
+  /* Customer Name */
+  .name {
+    margin-top: 5px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    font-size: smaller;
+  }
+  /* Customer Verification */
+  .verification {
+    margin-top: 5px;
+    font-size: smaller;
+  }
+}
+
